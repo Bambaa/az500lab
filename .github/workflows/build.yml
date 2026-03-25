@@ -17,7 +17,7 @@ jobs:
       - name: Login to ACR
         uses: docker/login-action@v3
         with:
-          registry: az5002050113056.azurecr.io
+          registry: az500780622169.azurecr.io
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
 
@@ -27,4 +27,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: az5002050113056.azurecr.io/sample/nginx:v1
+          tags: az500780622169.azurecr.io/sample/nginx:v1
